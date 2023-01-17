@@ -1,0 +1,39 @@
+.app-banners {
+    padding-top: 53px;
+    padding-bottom: 53px;
+    overflow: hidden;
+
+    &__holder {
+        //display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .swiper-slide {
+            width: fit-content;
+        }
+
+        .swiper-wrapper {
+            -webkit-transition-timing-function: linear !important;
+            -o-transition-timing-function: linear !important;
+            transition-timing-function: linear !important;
+            align-items: center;
+        }
+    }
+
+    @media (min-width: $mobile) {
+        .swiperBannersAutoplayReverse {
+            opacity: 0;
+            height: 0;
+            pointer-events: none;
+        }
+    }
+    @media (max-width: $mobile) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .swiper {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

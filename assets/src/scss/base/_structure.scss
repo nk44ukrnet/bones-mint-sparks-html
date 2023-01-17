@@ -1,0 +1,153 @@
+body {
+    font-family: $font1;
+    color: $color-dark1;
+    font-size: 15px;
+}
+
+.app-container {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-inline: auto;
+}
+
+.img-responsive {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.img-rounded {
+    border-radius: 5px;
+}
+
+.text-colored {
+    color: $color-green;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: $color-light;
+}
+
+.text-dark {
+    color: $color-dark;
+}
+
+._lock {
+    overflow: hidden;
+}
+
+.app-blog-content-variations {
+    strong {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 156%;
+    }
+
+    p {
+        line-height: 166%;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 160%;
+        color: $color-dark;
+    }
+
+    blockquote {
+        margin: 0;
+        margin-block: 40px 45px;
+        padding: 20px 22px 19px 27px;
+        border-left: 2px solid $color-green;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 155%;
+    }
+
+    .ul-group {
+        display: flex;
+        flex-wrap: wrap;
+        //justify-content: center;
+        //column-gap: 84px;
+        justify-content: space-around;
+        row-gap: 0;
+        margin-block: 30px;
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            @media (max-width: $mobile) {
+                width: 100%;
+                margin-left: 20px;
+                padding-left: 20px;
+            }
+
+            li {
+                font-size: 14px;
+                font-weight: 500;
+
+                &::marker {
+                    color: $color-green;
+                }
+
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .ul-group-light {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 77px;
+        row-gap: 0;
+        margin-left: 40px;
+
+        margin-block: 35px;
+
+        @media (max-width: $mobile) {
+            margin-block: 30px;
+            margin-left: 35px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 12px;
+
+            @media (max-width: $mobile) {
+                width: 100%;
+            }
+
+            &::marker {
+                color: $color-green;
+            }
+        }
+    }
+}
+
+.text-highlighted {
+    border-radius: 10px;
+    background-color: rgba(121, 200, 67, 0.10196078431372549);
+    font-size: 14px;
+    line-height: 164%;
+    color: #52852e;
+    padding: 30px;
+
+    @media (max-width: $mobile) {
+        padding: 20px;
+    }
+}

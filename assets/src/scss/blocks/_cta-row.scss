@@ -1,0 +1,61 @@
+.app-cta-row {
+
+    background-color: #2c2625;
+
+    &.visible {
+        background-image: url(../../img/cta-lg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        @media (max-width: $mobile) {
+            background-image: url(../../img/cta-sm.jpg);
+        }
+    }
+
+    .app-container {
+        padding-top: 106px;
+        padding-bottom: 93px;
+
+        @media (max-width: $mobile) {
+            padding-top: 46px;
+            padding-bottom: 56px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 549px;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            max-width: 549px;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 50px;
+        margin-bottom: 27px;
+        line-height: 130%;
+
+        @media (max-width: $mobile) {
+            margin: 0;
+            font-size: 36px;
+            margin-bottom: 33px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 51px;
+        line-height: 166%;
+        font-size: 18px;
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 16px;
+        background: linear-gradient(to right, #74c33e, #58a821);
+    }
+}

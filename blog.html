@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <meta name="description" content="Placeholder">
+
+    <link rel="preload" href="assets/fonts/Mulish-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/roboto-v30-latin-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/rubik-v23-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/dist/css/app.min.css">
+</head>
+
+<body>
+
+<div class="app-wrapper">
+
+    <div class="app-hero-internal">
+
+        <div class="app-container">
+
+            <header class="app-header">
+
+                <div class="app-header__logo-group">
+                    <div class="app-header__logo">
+                        <a href="#!"><img src="assets/img/logo-white.svg" alt="Logo" class="logo"></a>
+
+                        <button class="app-header__hamburger" aria-label="Toggle menu">
+                            <svg width="27" height="21" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0hamburger {
+        fill: none;
+        stroke: #79C843;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+</style>
+                                <line class="st0hamburger" x1="4" y1="6" x2="20" y2="6"/>
+                                <line class="st0hamburger" x1="4" y1="12" x2="20" y2="12"/>
+                                <line class="st0hamburger" x1="4" y1="18" x2="20" y2="18"/>
+</svg>
+                        </button>
+                    </div>
+
+
+                    <div class="app-header__svg-group">
+                        <img src="assets/img/google.svg" alt="google" class="app-header__google">
+                        <img src="assets/img/BBB.png" alt="bbb" class="app-header__bbb">
+                        <img src="assets/img/yelp.png" alt="yelp" class="app-header__yelp">
+                    </div>
+
+                    <a href="tel:1234567890" class="app-header__phone">(123) 456-7890</a>
+                </div>
+
+                <nav class="app-header__nav">
+                    <a href="#!" class="app-header__close">&times;</a>
+
+                    <div class="desktop-menu">
+                        <ul>
+                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">About</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Sub menu 1</a></li>
+                                    <li class="menu-item"><a href="#">Sub menu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#">Services</a></li>
+                            <li class="menu-item"><a href="#">Pricing</a></li>
+                            <li class="menu-item"><a href="#">Testimonials</a></li>
+                            <li class="menu-item"><a href="#">Blog</a></li>
+                            <li class="menu-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="menu" class="mobile-menu slinky-menu">
+                        <ul class="active">
+                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">About</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Sub menu 1</a></li>
+                                    <li class="menu-item"><a href="#">Sub menu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#">Services</a></li>
+                            <li class="menu-item"><a href="#">Pricing</a></li>
+                            <li class="menu-item"><a href="#">Testimonials</a></li>
+                            <li class="menu-item"><a href="#">Blog</a></li>
+                            <li class="menu-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+        </div>
+
+        <div class="app-container">
+            <div class="app-hero-internal__holder text-light">
+
+                <h1 class="app-hero-internal__heading heading">Blog</h1>
+
+                <div class="app-breadcrumbs">
+                    <a href="#!">Home</a>
+                    <a href="#!">Blog</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="app-page-internal">
+        <div class="app-container">
+
+            <main class="app-page-internal__main">
+                <div class="app-blog-list">
+
+                    <div class="app-blog-list__item app-blog-list__item_long">
+                        <a href="#!"><img src="assets/img/blog-i1.png" alt="blog" loading="lazy"
+                                          class="app-blog-list__img img-responsive"></a>
+                        <strong class="app-blog-list__date text-colored">12.08.2022</strong>
+
+                        <h2 class="app-blog-list__heading"><a href="#!">Orci a sociis</a></h2>
+
+                        <div class="app-blog-list__desc">
+                            Congue dolor elementum ligula parturient diam amet euismod parturient interdum a morbi a
+                            orci cras cras ridiculus consequat
+                        </div>
+                        <a href="#!" class="app-blog-list__btn app-btn app-btn_green">Read More</a>
+                    </div>
+
+                    <div class="app-blog-list__item">
+                        <a href="#!"><img src="assets/img/blog-i2.png" alt="blog" loading="lazy"
+                                          class="app-blog-list__img img-responsive"></a>
+                        <strong class="app-blog-list__date text-colored">12.08.2022</strong>
+
+                        <h2 class="app-blog-list__heading"><a href="#!">Orci a sociis</a></h2>
+
+                        <div class="app-blog-list__desc">
+                            Congue dolor elementum ligula parturient diam amet euismod parturient interdum a morbi a
+                            orci cras cras ridiculus consequat
+                        </div>
+                        <a href="#!" class="app-blog-list__btn app-btn app-btn_green">Read More</a>
+                    </div>
+
+                    <div class="app-blog-list__item">
+                        <a href="#!"><img src="assets/img/blog-i3.png" alt="blog" loading="lazy"
+                                          class="app-blog-list__img img-responsive"></a>
+                        <strong class="app-blog-list__date text-colored">12.08.2022</strong>
+
+                        <h2 class="app-blog-list__heading"><a href="#!">Lorem ipsum dolor sit
+                            amet</a></h2>
+
+                        <div class="app-blog-list__desc">
+                            Ad quisque curabitur augue congue dolor elementum ligula parturient diam amet euismod
+                            parturient interdum a morbi a orci
+                        </div>
+                        <a href="#!" class="app-blog-list__btn app-btn app-btn_green">Read More</a>
+                    </div>
+
+                    <div class="app-blog-list__item">
+                        <a href="#!"><img src="assets/img/blog-i4.png" alt="blog" loading="lazy"
+                                          class="app-blog-list__img img-responsive"></a>
+                        <strong class="app-blog-list__date text-colored">12.08.2022</strong>
+
+                        <h2 class="app-blog-list__heading"><a href="#!">Orci a sociis</a></h2>
+
+                        <div class="app-blog-list__desc">
+                            Congue dolor elementum ligula parturient diam amet euismod parturient interdum a morbi a
+                            orci cras cras ridiculus consequat
+                        </div>
+                        <a href="#!" class="app-blog-list__btn app-btn app-btn_green">Read More</a>
+                    </div>
+
+                    <div class="app-blog-list__item">
+                        <a href="#!"><img src="assets/img/blog-i5.png" alt="blog" loading="lazy"
+                                          class="app-blog-list__img img-responsive"></a>
+                        <strong class="app-blog-list__date text-colored">12.08.2022</strong>
+
+                        <h2 class="app-blog-list__heading"><a href="#!">Lorem ipsum dolor sit
+                            amet</a></h2>
+
+                        <div class="app-blog-list__desc">
+                            Ad quisque curabitur augue congue dolor elementum ligula parturient diam amet euismod
+                            parturient interdum a morbi a orci
+                        </div>
+                        <a href="#!" class="app-blog-list__btn app-btn app-btn_green">Read More</a>
+                    </div>
+
+                    <div class="app-blog-list__item">
+                        <a href="#!"><img src="assets/img/blog-i6.png" alt="blog" loading="lazy"
+                                          class="app-blog-list__img img-responsive"></a>
+                        <strong class="app-blog-list__date text-colored">12.08.2022</strong>
+
+                        <h2 class="app-blog-list__heading"><a href="#!">Orci a sociis</a></h2>
+
+                        <div class="app-blog-list__desc">
+                            Congue dolor elementum ligula parturient diam amet euismod parturient interdum a morbi a
+                            orci cras cras ridiculus consequat
+                        </div>
+                        <a href="#!" class="app-blog-list__btn app-btn app-btn_green">Read More</a>
+                    </div>
+
+                    <div class="app-blog-list__item">
+                        <a href="#!"><img src="assets/img/blog-i7.png" alt="blog" loading="lazy"
+                                          class="app-blog-list__img img-responsive"></a>
+                        <strong class="app-blog-list__date text-colored">12.08.2022</strong>
+
+                        <h2 class="app-blog-list__heading"><a href="#!">Lorem ipsum dolor sit
+                            amet</a></h2>
+
+                        <div class="app-blog-list__desc">
+                            Ad quisque curabitur augue congue dolor elementum ligula parturient diam amet euismod
+                            parturient interdum a morbi a orci
+                        </div>
+                        <a href="#!" class="app-blog-list__btn app-btn app-btn_green">Read More</a>
+                    </div>
+
+                </div>
+
+                <div class="app-pagination">
+                    <a href="#!" class="page">←</a>
+                    <a href="#!" class="page mobile-visible">1</a>
+                    <a href="#!" class="page">2</a>
+                    <a href="#!" class="page">3</a>
+                    <a href="#!" class="dots mobile-visible">...</a>
+                    <a href="#!" class="page mobile-visible">7</a>
+                    <a href="#!" class="page current mobile-visible">8</a>
+                    <a href="#!" class="page mobile-visible">9</a>
+                    <a href="#!" class="dots mobile-visible">...</a>
+                    <a href="#!" class="page">25</a>
+                    <a href="#!" class="page">26</a>
+                    <a href="#!" class="page mobile-visible">27</a>
+                    <a href="#!" class="page">→</a>
+                </div>
+            </main>
+
+            <aside class="app-sidebar">
+
+                <div class="sidebar app-sidebar-form text-light text-center sidebar">
+
+                    <div class="section-title">
+                        <span>
+                            <strong>CALL NOW!</strong>
+                            <a href="tel:1234567890">(123) 456-7890</a>
+                        </span>
+                    </div>
+                    <div class="app-sidebar-form__subheading">Get Started Today With A Free Consultation <br> Request!
+                    </div>
+                    <form class="wpcf7-form init">
+                        <div class="app-sidebar-form__control">
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarFirstName">First Name</label>
+                                <input type="text" id="sidebarFirstName">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarLastName">Last Name</label>
+                                <input type="text" id="sidebarLastName">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarPhoneNumber">Phone Number</label>
+                                <input type="tel" id="sidebarPhoneNumber">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarEmail">Email</label>
+                                <input type="email" id="sidebarEmail">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarQuestion">What is your question?</label>
+                                <textarea id="sidebarQuestion"></textarea>
+                            </div>
+                            <button class="app-btn app-btn_green" type="submit">Submit</button>
+                            <div class="text-center">
+                                <span class="wpcf7-spinner"></span>
+                                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sidebar app-sidebar-categories">
+                    <div class="section-title">Blog
+                        Categories</div>
+                    <ul>
+                        <li><a href="#!">Eleifend vestibulum mi <span class="text-colored">(12)</span></a></li>
+                        <li><a href="#!">Ridiculus ullamcorper <span class="text-colored">(8)</span></a></li>
+                        <li><a href="#!">In ipsum vulputate uctovulputate <span class="text-colored">(25)</span></a>
+                        </li>
+                        <li><a href="#!">Potenti ad dui <span class="text-colored">(38)</span></a></li>
+                        <li><a href="#!">Suspendisse tristique Fermentum enim ut quam <span
+                                class="text-colored">(6)</span></a></li>
+                        <li><a href="#!">Adipiscing <span class="text-colored">(8)</span></a></li>
+                        <li><a href="#!">Quisque eget adipiscing <span class="text-colored">(7)</span></a></li>
+                        <li><a href="#!">Vestibulum nibh est <span class="text-colored">(26)</span></a></li>
+                        <li><a href="#!">Auctor a vulputate <span class="text-colored">(12)</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar app-sidebar-testimonials text-center">
+                    <div class="section-title">Client
+                        Testimonials</div>
+
+                    <!-- Swiper -->
+                    <div class="swiper swiperSidebarTestimonials">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="app-sidebar-testimonials__item">
+                                    <h3 class="app-sidebar-testimonials__title">Name Surname</h3>
+                                    <div class="app-sidebar-testimonials__text">
+                                        Duis vel praesent orci nibh laoreet tristique vivamus imperdiet curabitur
+                                        penatibus aptent a condimentum a cum adipiscing aliquet mattis dictumst semper
+                                        mi vestibulum in mi tortor.Nisl ut duis dignissim iaculis consequat gravida a
+                                        dis purus.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="app-sidebar-testimonials__item">
+                                    <h3 class="app-sidebar-testimonials__title">Name Surname</h3>
+                                    <div class="app-sidebar-testimonials__text">
+                                        Duis vel praesent orci nibh laoreet tristique vivamus imperdiet curabitur
+                                        penatibus aptent a condimentum a cum adipiscing aliquet mattis dictumst semper
+                                        mi vestibulum in mi tortor.Nisl ut duis dignissim iaculis consequat gravida a
+                                        dis purus.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="app-sidebar-testimonials__item">
+                                    <h3 class="app-sidebar-testimonials__title">Name Surname</h3>
+                                    <div class="app-sidebar-testimonials__text">
+                                        Duis vel praesent orci nibh laoreet tristique vivamus imperdiet curabitur
+                                        penatibus aptent a condimentum a cum adipiscing aliquet mattis dictumst semper
+                                        mi vestibulum in mi tortor.Nisl ut duis dignissim iaculis consequat gravida a
+                                        dis purus.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="app-sidebar-testimonials__item">
+                                    <h3 class="app-sidebar-testimonials__title">Name Surname</h3>
+                                    <div class="app-sidebar-testimonials__text">
+                                        Duis vel praesent orci nibh laoreet tristique vivamus imperdiet curabitur
+                                        penatibus aptent a condimentum a cum adipiscing aliquet mattis dictumst semper
+                                        mi vestibulum in mi tortor.Nisl ut duis dignissim iaculis consequat gravida a
+                                        dis purus.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="app-sidebar-testimonials__item">
+                                    <h3 class="app-sidebar-testimonials__title">Name Surname</h3>
+                                    <div class="app-sidebar-testimonials__text">
+                                        Duis vel praesent orci nibh laoreet tristique vivamus imperdiet curabitur
+                                        penatibus aptent a condimentum a cum adipiscing aliquet mattis dictumst semper
+                                        mi vestibulum in mi tortor.Nisl ut duis dignissim iaculis consequat gravida a
+                                        dis purus.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <footer class="app-footer app-footer_interal">
+        <div class="app-container">
+            <div class="app-footer__top">
+                <div class="cell">
+                    <img src="assets/img/logo-dark.svg" width="328" alt="logo" loading="lazy" class="app-footer__logo">
+                    <a href="tel:1234567890" class="app-footer__phone">(123) 456-7890</a>
+                    <div class="app-footer__address">
+                        1005 North Marion Street <br>
+                        Suite 107 Tampa, FL 33602
+                    </div>
+                    <div class="app-footer__social">
+                        <a href="#!" target="_blank"><img width="27" src="assets/img/in.svg" alt="social"
+                                                          loading="lazy"></a>
+                        <a href="#!" target="_blank"><img width="27" src="assets/img/twitter.svg" alt="social"
+                                                          loading="lazy"></a>
+                        <a href="#!" target="_blank"><img width="27" src="assets/img/fb.svg" alt="social"
+                                                          loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Potenti </a></li>
+                        <li><a href="#!">Molestie penatibus</a></li>
+                        <li><a href="#!">Odio a feugiat</a></li>
+                        <li><a href="#!">Auctor montes </a></li>
+                        <li><a href="#!">Dcelerisque</a></li>
+                        <li><a href="#!">Sociis </a></li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Eleifend congue</a></li>
+                        <li><a href="#!">Class faucibus</a></li>
+                        <li><a href="#!">Nulla auctor</a></li>
+                        <li><a href="#!">Praesent</a></li>
+                        <li><a href="#!">Condimentum</a></li>
+                        <li><a href="#!">Lectus consectetur </a></li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Dictum vestibulum</a></li>
+                        <li><a href="#!">Mollis tincidunt </a></li>
+                        <li><a href="#!">Est enim</a></li>
+                        <li><a href="#!">Blandit congue</a></li>
+                        <li><a href="#!">Condimentum</a></li>
+                        <li><a href="#!">Condimentum</a></li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Potenti </a></li>
+                        <li><a href="#!">Molestie penatibus</a></li>
+                        <li><a href="#!">Odio a feugiat </a></li>
+                        <li><a href="#!">Auctor montes </a></li>
+                        <li><a href="#!">Dcelerisque</a></li>
+                        <li><a href="#!">Sociis </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="app-footer__copyright text-center">
+                Nostra dolor suspendisse lacus sociis a aptent sagittis viverra elementum feugiat adipiscing consectetur
+                habitant semper mus sagittis adipiscing
+                <br>
+                <span>© 2022 - All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="jquery-3.6.0.js"></script> <!-- Will be loaded locally in WordPress, so we use CDN here -->
+<script src="jquery-migrate-3.4.0.js"></script>
+<!-- Will be loaded locally in WordPress, so we use CDN here -->
+<script src="assets/dist/js/app.min.js"></script>
+
+</body>
+</html>

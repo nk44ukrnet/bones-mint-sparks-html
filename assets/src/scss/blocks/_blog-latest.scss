@@ -1,0 +1,78 @@
+.app-blog-latest {
+
+    .app-container {
+        padding-block: 55px;
+
+        @media (max-width: $mobile) {
+            padding-block: 28px 58px;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 46px;
+        margin-bottom: 28px;
+
+        @media (max-width: $mobile) {
+            font-size: 36px;
+            margin-bottom: 26px;
+        }
+    }
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 54px;
+
+        @media (max-width: $mobile) {
+            gap: 29px;
+        }
+    }
+
+    &__item {
+        flex: 0 1 306px;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 306px;
+        height: 189px;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+        border-radius: 10px;
+        margin-inline: auto;
+
+        @media (max-width: $mobile) {
+            max-width: 320px;
+            height: 195px;
+        }
+    }
+
+    &__title {
+        line-height: 127%;
+        font-size: 22px;
+        margin: 22px 0;
+        //margin-inline: 25px 21px;
+
+        @media (max-width: $mobile) {
+            //margin-inline: 20px 22px;
+            margin: 20px 0;
+        }
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        line-height: 150%;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}

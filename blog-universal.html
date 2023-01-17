@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blog Universal</title>
+    <meta name="description" content="Placeholder">
+
+    <link rel="preload" href="assets/fonts/Mulish-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/roboto-v30-latin-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/rubik-v23-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/dist/css/app.min.css">
+</head>
+
+<body>
+
+<div class="app-wrapper">
+
+    <div class="app-hero-internal">
+
+        <div class="app-container">
+
+            <header class="app-header">
+
+                <div class="app-header__logo-group">
+                    <div class="app-header__logo">
+                        <a href="#!"><img src="assets/img/logo-white.svg" alt="Logo" class="logo"></a>
+
+                        <button class="app-header__hamburger" aria-label="Toggle menu">
+                            <svg width="27" height="21" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0hamburger {
+        fill: none;
+        stroke: #79C843;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+</style>
+                                <line class="st0hamburger" x1="4" y1="6" x2="20" y2="6"/>
+                                <line class="st0hamburger" x1="4" y1="12" x2="20" y2="12"/>
+                                <line class="st0hamburger" x1="4" y1="18" x2="20" y2="18"/>
+</svg>
+                        </button>
+                    </div>
+
+
+                    <div class="app-header__svg-group">
+                        <img src="assets/img/google.svg" alt="google" class="app-header__google">
+                        <img src="assets/img/BBB.png" alt="bbb" class="app-header__bbb">
+                        <img src="assets/img/yelp.png" alt="yelp" class="app-header__yelp">
+                    </div>
+
+                    <a href="tel:1234567890" class="app-header__phone">(123) 456-7890</a>
+                </div>
+
+                <nav class="app-header__nav">
+                    <a href="#!" class="app-header__close">&times;</a>
+
+                    <div class="desktop-menu">
+                        <ul>
+                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">About</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Sub menu 1</a></li>
+                                    <li class="menu-item"><a href="#">Sub menu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#">Services</a></li>
+                            <li class="menu-item"><a href="#">Pricing</a></li>
+                            <li class="menu-item"><a href="#">Testimonials</a></li>
+                            <li class="menu-item"><a href="#">Blog</a></li>
+                            <li class="menu-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="menu" class="mobile-menu slinky-menu">
+                        <ul class="active">
+                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">About</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Sub menu 1</a></li>
+                                    <li class="menu-item"><a href="#">Sub menu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#">Services</a></li>
+                            <li class="menu-item"><a href="#">Pricing</a></li>
+                            <li class="menu-item"><a href="#">Testimonials</a></li>
+                            <li class="menu-item"><a href="#">Blog</a></li>
+                            <li class="menu-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+        </div>
+
+        <div class="app-container">
+            <div class="app-hero-internal__holder text-light">
+
+                <h1 class="app-hero-internal__heading heading">Blog Post Title</h1>
+
+                <div class="app-breadcrumbs">
+                    <a href="#!">Home</a>
+                    <a href="#!">Inner Page Name</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="app-page-internal">
+        <div class="app-container">
+
+            <main class="app-page-internal__main">
+
+                <div class="app-blog-content-variations">
+
+                    <img src="assets/img/blog-internal-img.png" alt="blog img" loading="lazy"
+                         class="img-responsive img-rounded">
+
+                    <p>
+                        <strong>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad
+                            minim veniam,
+                        </strong>
+                    </p>
+
+                    <p>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+
+                    <h3>
+                        Sociis a ligula
+                    </h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
+                    </p>
+
+                    <div class="ul-group">
+                        <ul>
+                            <li>Neque porro</li>
+                            <li>Quisquam est qui</li>
+                            <li>Dolorem ipsum</li>
+                            <li>Quia dolor sit amet</li>
+                        </ul>
+                        <ul>
+                            <li>Consectetur</li>
+                            <li>Adipisci velit</li>
+                            <li>Sed quia</li>
+                            <li>Non numquam</li>
+                        </ul>
+                        <ul>
+                            <li>Tempora incidunt</li>
+                            <li>Ut labore et dolore</li>
+                            <li>Magnam aliquam</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu
+                    </p>
+
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id
+                    </blockquote>
+
+                    <h3>Sociis a ligula</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+
+                    <div class="text-highlighted">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+
+                    <h3>Sociis a ligula</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                        aliquam quaerat voluptatem.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                        aliquam quaerat voluptatem.
+                    </p>
+
+                </div>
+            </main>
+
+            <aside class="app-sidebar app-sidebar_no-gap-mobile ">
+
+                <div class="sidebar app-sidebar-form text-light text-center sidebar">
+
+                    <div class="section-title">
+                        <span>
+                            <strong>CALL NOW!</strong>
+                            <a href="tel:1234567890">(123) 456-7890</a>
+                        </span>
+                    </div>
+                    <div class="app-sidebar-form__subheading">Get Started Today With A Free Consultation <br> Request!
+                    </div>
+                    <form class="wpcf7-form init">
+                        <div class="app-sidebar-form__control">
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarFirstName">First Name</label>
+                                <input type="text" id="sidebarFirstName">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarLastName">Last Name</label>
+                                <input type="text" id="sidebarLastName">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarPhoneNumber">Phone Number</label>
+                                <input type="tel" id="sidebarPhoneNumber">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarEmail">Email</label>
+                                <input type="email" id="sidebarEmail">
+                            </div>
+                            <div class="app-sidebar-form__cell">
+                                <label for="sidebarQuestion">What is your question?</label>
+                                <textarea id="sidebarQuestion"></textarea>
+                            </div>
+                            <button class="app-btn app-btn_green" type="submit">Submit</button>
+                            <div class="text-center">
+                                <span class="wpcf7-spinner"></span>
+                                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sidebar app-sidebar-latest-posts text-center">
+                    <div class="section-title">Our Latest Posts</div>
+
+                    <div class="app-sidebar-latest-posts__item">
+                        <a href="#!"><img src="assets/img/sidebar-post1.png" alt="post image" loading="lazy"
+                                          class="app-sidebar-latest-posts__img img-responsive"></a>
+                        <h3 class="app-sidebar-latest-posts__title">
+                            <a href="#!">Litora magna parturient ultrices</a>
+                        </h3>
+                        <div class="app-sidebar-latest-posts__desc">
+                            Elementum vehicula ullamcorper iaculis bibendum augue mus aenean placerat per vestibulum
+                            tristique faucibus...
+                        </div>
+                        <div class="text-center">
+                            <a href="#!" class="app-sidebar-latest-posts__btn app-btn app-btn_green">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class=" app-sidebar-latest-posts__item">
+                        <img src="assets/img/sidebar-post2.png" alt="post image" loading="lazy"
+                             class="app-sidebar-latest-posts__img img-responsive">
+                        <h3 class="app-sidebar-latest-posts__title">
+                            <a href="#!">Enim condimentum litoram ad</a>
+                        </h3>
+                        <div class="app-sidebar-latest-posts__desc">
+                            Ullamcorper iaculis bibendum augue mus aenean placerat per vestibulum tristique a feugiat ut
+                            nisl fermentum a cubilia vel...
+                        </div>
+                        <div class="text-center">
+                            <a href="#!" class="app-sidebar-latest-posts__btn app-btn app-btn_green">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="app-sidebar-latest-posts__item">
+                        <a href="#!"><img src="assets/img/sidebar-post3.png" alt="post image" loading="lazy"
+                                          class="app-sidebar-latest-posts__img img-responsive"></a>
+                        <h3 class="app-sidebar-latest-posts__title">
+                            <a href="#!">Integer suspendisse mattis fringilla</a>
+                        </h3>
+                        <div class="app-sidebar-latest-posts__desc">
+                            Fermentum consectetur nulla hac adipiscing ultricies tincidunt praesent. A at scelerisque
+                            laoreet adipiscing ullamcvorper...
+                        </div>
+                        <div class="text-center">
+                            <a href="#!" class="app-sidebar-latest-posts__btn app-btn app-btn_green">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <footer class="app-footer app-footer_interal">
+        <div class="app-container">
+            <div class="app-footer__top">
+                <div class="cell">
+                    <img src="assets/img/logo-dark.svg" width="328" alt="logo" loading="lazy" class="app-footer__logo">
+                    <a href="tel:1234567890" class="app-footer__phone">(123) 456-7890</a>
+                    <div class="app-footer__address">
+                        1005 North Marion Street <br>
+                        Suite 107 Tampa, FL 33602
+                    </div>
+                    <div class="app-footer__social">
+                        <a href="#!" target="_blank"><img width="27" src="assets/img/in.svg" alt="social"
+                                                          loading="lazy"></a>
+                        <a href="#!" target="_blank"><img width="27" src="assets/img/twitter.svg" alt="social"
+                                                          loading="lazy"></a>
+                        <a href="#!" target="_blank"><img width="27" src="assets/img/fb.svg" alt="social"
+                                                          loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Potenti </a></li>
+                        <li><a href="#!">Molestie penatibus</a></li>
+                        <li><a href="#!">Odio a feugiat</a></li>
+                        <li><a href="#!">Auctor montes </a></li>
+                        <li><a href="#!">Dcelerisque</a></li>
+                        <li><a href="#!">Sociis </a></li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Eleifend congue</a></li>
+                        <li><a href="#!">Class faucibus</a></li>
+                        <li><a href="#!">Nulla auctor</a></li>
+                        <li><a href="#!">Praesent</a></li>
+                        <li><a href="#!">Condimentum</a></li>
+                        <li><a href="#!">Lectus consectetur </a></li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Dictum vestibulum</a></li>
+                        <li><a href="#!">Mollis tincidunt </a></li>
+                        <li><a href="#!">Est enim</a></li>
+                        <li><a href="#!">Blandit congue</a></li>
+                        <li><a href="#!">Condimentum</a></li>
+                        <li><a href="#!">Condimentum</a></li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <ul>
+                        <li><a href="#!">Potenti </a></li>
+                        <li><a href="#!">Molestie penatibus</a></li>
+                        <li><a href="#!">Odio a feugiat </a></li>
+                        <li><a href="#!">Auctor montes </a></li>
+                        <li><a href="#!">Dcelerisque</a></li>
+                        <li><a href="#!">Sociis </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="app-footer__copyright text-center">
+                Nostra dolor suspendisse lacus sociis a aptent sagittis viverra elementum feugiat adipiscing consectetur
+                habitant semper mus sagittis adipiscing
+                <br>
+                <span>© 2022 - All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="jquery-3.6.0.js"></script> <!-- Will be loaded locally in WordPress, so we use CDN here -->
+<script src="jquery-migrate-3.4.0.js"></script>
+<!-- Will be loaded locally in WordPress, so we use CDN here -->
+<script src="assets/dist/js/app.min.js"></script>
+
+</body>
+</html>

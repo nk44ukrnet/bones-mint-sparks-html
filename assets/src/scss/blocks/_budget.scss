@@ -1,0 +1,148 @@
+.app-budget {
+
+    .app-container {
+        padding-top: 61px;
+        padding-bottom: 67px;
+
+        @media (max-width: $mobile) {
+            padding-top: 34px;
+            padding-bottom: 27px;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 46px;
+        margin-bottom: 25px;
+
+        @media (max-width: $mobile) {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__subheading-text {
+        line-height: 150%;
+        margin-bottom: 45px;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 27px;
+
+        [class="app-budget__item"] {
+            transition: $transition1;
+
+            &:hover {
+                box-shadow: 1px 1px 10px $color-green;
+            }
+        }
+
+        @media (max-width: $mobile) {
+            justify-content: center;
+            gap: 7px;
+        }
+    }
+
+    &__item {
+        flex: 1 1 195px;
+        background: linear-gradient(to top, #4fa018, #6fbe39);
+        color: $color-light;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_active {
+            background: #333333;
+
+            .app-budget__title {
+                font-size: 16px;
+                display: block;
+                text-transform: unset;
+                font-weight: normal;
+
+                strong {
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 110%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &_disabled {
+            background: #cbcbcb;
+
+            transition: $transition1;
+
+            &:hover {
+                box-shadow: 1px 1px 10px #cbcbcb;
+            }
+
+            .app-budget__title,
+            .app-budget__text {
+                color: #9f9f9f;
+            }
+
+        }
+
+        @media (min-width: $mobile) {
+            min-height: 174px;
+        }
+
+        @media (max-width: $mobile) {
+            flex: 1 1 156px;
+            padding: 12px;
+            min-height: 165px;
+
+            &_active {
+
+                .app-budget__title {
+                    strong {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0;
+        line-height: 120%;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 123%;
+    }
+
+    &__btn {
+        padding: 10px 25px;
+        background-color: #5dac26;
+        font-weight: bold;
+        font-size: 16px;
+
+        @media (max-width: $mobile) {
+            padding: 11px;
+        }
+    }
+}

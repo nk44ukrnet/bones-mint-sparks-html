@@ -1,0 +1,114 @@
+.app-process {
+
+    background-color: #2d2d2d;
+
+    .app-container {
+        padding-top: 57px;
+        padding-bottom: 82px;
+
+        @media (max-width: $mobile) {
+            padding-top: 50px;
+            padding-bottom: 62px;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 46px;
+
+        @media (max-width: $mobile) {
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__subheading-text {
+        line-height: 150%;
+        margin-bottom: 50px;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 85px;
+        justify-content: center;
+
+        @media (max-width: 1110px) {
+            gap: 50px;
+            //flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        flex: 0 1 143px;
+        position: relative;
+
+        &:not(:last-child) {
+            &::after {
+                content: '';
+                width: 10px;
+                height: 17px;
+                display: block;
+                position: absolute;
+                top: 60px;
+                right: -45px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(../../img/arrow-white.svg);
+            }
+        }
+
+        @media (max-width: 1110px) {
+            flex: 1 1 100%;
+
+            &:not(:last-child) {
+                &::after {
+                    //position: relative;
+                    top: unset;
+                    right: unset;
+                    bottom: -45px;
+                    left: 50%;
+                    //left: unset;
+                    //bottom: unset;
+                    transform: rotate(90deg) translateY(25%);
+                    width: 24px;
+                    height: 17px;
+                    transform-origin: top;
+                }
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__circle {
+        width: 130px;
+        height: 130px;
+        background: linear-gradient(to top, #469510, #6dba39);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-bottom: 25px;
+
+        @media (max-width: 1110px) {
+            margin-bottom: 22px;
+            margin-inline: auto;
+            display: table;
+        }
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 130%;
+    }
+}

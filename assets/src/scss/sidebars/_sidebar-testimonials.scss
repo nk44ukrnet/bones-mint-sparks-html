@@ -1,0 +1,49 @@
+.app-sidebar-testimonials {
+    border-radius: 5px;
+    padding: 34px 20px 34px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+
+    max-width: 307px;
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .section-title {
+        margin: 0;
+        font-size: 38px;
+        line-height: 110%;
+        margin-bottom: 29px;
+
+        @extend .heading;
+        @extend .heading-pseudo;
+    }
+
+    &__item {
+    }
+
+    &__title {
+        margin: 0;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 157%;
+        padding-bottom: 37px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #cccccc;
+        opacity: 1;
+
+        &-active {
+            background-color: $color-green;
+        }
+    }
+}

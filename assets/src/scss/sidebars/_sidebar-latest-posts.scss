@@ -1,0 +1,72 @@
+.app-sidebar-latest-posts {
+
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 32px 17px 37px;
+
+    @media (max-width: $mobile) {
+        order: 6;
+        padding: 35px 20px;
+
+        width: 100%;
+        max-width: 400px;
+    }
+
+    @media (max-width: 400px) {
+        margin-inline: -20px;
+    }
+
+    .section-title {
+        margin: 0;
+        margin-bottom: 30px;
+        gap: 22px;
+        font-size: 38px;
+        line-height: 110%;
+
+        @extend .heading;
+        @extend .heading-pseudo;
+
+        @media (max-width: $mobile) {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+
+            @media (max-width: $mobile) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__img {
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 127%;
+        margin: 0;
+        margin-block: 20px;
+        color: $color-dark;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__desc {
+        line-height: 146%;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        font-size: 16px;
+        font-weight: bold;
+        background: linear-gradient(-80deg, #52a31c 0%, #79c743 100%);
+    }
+}

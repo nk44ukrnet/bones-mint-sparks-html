@@ -1,0 +1,73 @@
+.app-hero {
+    background-color: #221d1c;
+    background-image: url(../../img/header-lg.jpg);
+    //background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $mobile) {
+        min-height: 762px;
+    }
+    @media (min-width: 1920px) {
+        background-size: cover;
+    }
+
+    @media (max-width: $mobile) {
+        background-image: url(../../img/header-sm.jpg);
+        background-size: unset;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        padding-bottom: 39px;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 620px;
+        margin-left: auto;
+        color: $color-light;
+
+        @media (max-width: $mobile) {
+            margin-top: 30px;
+            max-width: unset;
+            margin-left: unset;
+        }
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 110%;
+        margin-top: 0;
+        margin-bottom: 0px;
+
+        span {
+            display: block;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 65px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__subheading {
+        margin: 0 0 70px;
+        line-height: 190%;
+        font-size: 23px;
+
+        @media (max-width: $mobile) {
+            font-size: 22px;
+            margin-bottom: 160px;
+            line-height: 140%;
+        }
+    }
+
+    &__btn {
+        background: linear-gradient(-80deg, #52a31c 0%, #79c743 100%);
+    }
+}
+

@@ -1,0 +1,124 @@
+.app-services {
+    background-color: $color-dark;
+
+    @media (max-width: $mobile) {
+        background-color: #262525;
+    }
+
+    &.visible {
+        background-image: url(../../img/services-lg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        @media (max-width: $mobile) {
+            background-image: url(../../img/services-sm.jpg);
+            background-size: unset;
+            background-position: bottom center;
+        }
+    }
+
+    .app-container {
+        padding-top: 177px;
+        padding-bottom: 90px;
+
+        @media (max-width: $mobile) {
+            padding-top: 45px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__heading {
+        margin-top: 0;
+        margin-bottom: 45px;
+        font-size: 40px;
+
+        @media (max-width: $mobile) {
+            text-align: center;
+            margin-bottom: 29px;
+            font-size: 36px;
+        }
+    }
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 34px;
+        column-gap: 23px;
+
+        @media (max-width: $mobile) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex: 0 1 255px;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+
+        @media (max-width: $mobile) {
+            gap: 15px;
+        }
+    }
+
+    &__cell {
+        background-color: $color-light;
+        clip-path: polygon(0% 0%, 96% 0, 100% 50%, 96% 100%, 0% 100%);
+        display: flex;
+        align-items: center;
+        padding: 13px 39px 13px 15px;
+        gap: 13px;
+        border-radius: 2px;
+        box-sizing: border-box;
+
+        @media (min-width: $mobile) {
+            min-height: 110px;
+        }
+
+        @media (max-width: $mobile) {
+            //clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
+            clip-path: unset;
+            padding: 11px 22px 21px 22px;
+            background: url(../../img/services-mobile-bg.png) top center no-repeat;
+            min-width: 259px;
+            min-height: 114px;
+            box-sizing: border-box;
+        }
+    }
+
+    &__icon {
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    &__text {
+        padding-left: 16px;
+        border-left: 1px solid #e5e5fa;
+        line-height: 135%;
+        font-size: 20px;
+        font-weight: 500;
+
+        @media (max-width: $mobile) {
+            min-height: 83px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__desc {
+        @extend .text-light;
+        font-size: 13px;
+        line-height: 138%;
+        color: $color-light;
+        margin: 0;
+
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.app-btn {
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px 36px;
+
+    &_big {
+        padding: 21px 42px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    &_green {
+        background-color: $color-green;
+        color: $color-light;
+        border-radius: 5px;
+        transition: $transition1;
+
+        &:hover {
+            box-shadow: 1px 1px 7px $color-green;
+        }
+    }
+
+    &_dark {
+        background: linear-gradient(to top, #212121, #505050);
+        transition: $transition1;
+
+        &:hover {
+            box-shadow: 1px 1px 4px $color-dark1;
+        }
+    }
+}

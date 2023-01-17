@@ -1,0 +1,32 @@
+.heading {
+    line-height: 123%;
+    font-size: 40px;
+    font-weight: 600;
+
+    @media (max-width: $mobile) {
+        font-size: 34px;
+    }
+}
+
+.heading-pseudo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    position: relative;
+    align-items: center;
+
+    &::after {
+        content: '';
+        width: 39px;
+        height: 8px;
+        position: relative;
+        display: block;
+        background-color: $color-green;
+    }
+}
+
+.heading-pseudo_sm {
+    align-items: flex-start;
+    font-size: 26px;
+    row-gap: 17px;
+}

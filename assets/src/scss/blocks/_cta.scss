@@ -1,0 +1,27 @@
+.app-plain-cta {
+    background-color: $color-green;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+
+    &__btn {
+        color: $color-light;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+        padding-bottom: 35px;
+
+        &__heading {
+            margin-bottom: 23px;
+            font-size: 34px;
+            line-height: 132%;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.app-owners {
+
+    background-color: #2d2d2d;
+
+    .app-container {
+        padding-top: 52px;
+        padding-bottom: 78px;
+
+        @media (max-width: $mobile) {
+            padding-top: 38px;
+            padding-bottom: 31px;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 46px;
+        margin-bottom: 46px;
+
+        @media (max-width: $mobile) {
+            font-size: 46px;
+            margin-bottom: 33px;
+        }
+    }
+
+    &__holder {
+        padding: 22px;
+        background-color: $color-light;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 1023px;
+        margin-inline: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        box-sizing: border-box;
+
+        @media (max-width: $mobile) {
+            gap: 25px;
+        }
+    }
+
+    &__item {
+        flex: 1 1 312px;
+    }
+
+    &__img {
+        display: table;
+        border-radius: 10px;
+        margin-inline: auto;
+        width: 100%;
+        max-width: 312px;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 28px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__bio {
+        line-height: 146%;
+        margin-bottom: 35px;
+        @media (max-width: $mobile) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__btn {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

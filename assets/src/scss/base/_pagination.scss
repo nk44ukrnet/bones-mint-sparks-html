@@ -1,0 +1,50 @@
+.app-pagination {
+    margin-top: 33px;
+    width: fit-content;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    .page {
+        box-sizing: border-box;
+        border: 1px solid #dedee3;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 33px;
+        min-width: 33px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .dots {
+        margin-left: 12px;
+        margin-right: 12px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .current {
+        background: linear-gradient(170deg, rgb(83, 163, 28) 0%, rgb(121, 200, 67) 100%);
+        color: $color-light;
+        border-color: $color-green;
+    }
+
+    @media (max-width: $mobile) {
+        gap: 0;
+        margin-top: 25px;
+
+        & > *:not(.mobile-visible) {
+            display: none;
+        }
+    }
+}
+

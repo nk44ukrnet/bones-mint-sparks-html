@@ -1,0 +1,66 @@
+.app-sidebar-categories {
+    background-color: #f1f1f1;
+    color: $color-dark;
+    padding: 45px 33px 37px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    @media (max-width: $mobile) {
+        max-width: 400px;
+        padding: 30px 20px 35px;
+    }
+
+    .section-title {
+        line-height: 110%;
+        font-size: 38px;
+        margin: 0;
+        margin-bottom: 20px;
+
+        @extend .heading;
+        @extend .heading-pseudo;
+        @extend .text-center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-dark1;
+    }
+
+    li {
+        font-size: 13px;
+        line-height: 138%;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 15px;
+        }
+    }
+
+    .text-colored {
+        font-size: 11px;
+        font-weight: 600;
+        @media (max-width: $mobile) {
+            font-size: 13px;
+        }
+    }
+}
+
+.text-center {
+}
+
+.heading {
+}
+
+.heading-pseudo {
+}
+
+

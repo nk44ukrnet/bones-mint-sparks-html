@@ -1,0 +1,26 @@
+.app-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    max-width: 307px;
+
+
+    @media (max-width: $mobile) {
+        gap: 20px;
+        max-width: unset;
+
+        &_no-gap-mobile {
+            gap: 0;
+        }
+    }
+}
+
+.sidebar {
+    .section-title {
+        @extend .heading;
+        @extend .heading-pseudo;
+    }
+}

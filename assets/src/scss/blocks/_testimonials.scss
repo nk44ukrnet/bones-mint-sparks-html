@@ -1,0 +1,97 @@
+.app-testimonials {
+
+    background-color: #2d2d2d;
+
+    .app-container {
+        padding-block: 89px 67px;
+
+        @media (max-width: $mobile) {
+            padding-block: 43px 35px;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 46px;
+        margin-bottom: 37px;
+
+        @media (max-width: $mobile) {
+            font-size: 36px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__inner {
+        padding: 40px;
+        box-sizing: border-box;
+        margin-inline: 60px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $color-light;
+
+        @media (max-width: $mobile) {
+            margin-inline: 0px;
+            padding: 38px;
+        }
+    }
+
+    &__swiper {
+        margin-bottom: 33px;
+
+        width: 100%;
+        max-width: 960px;
+        margin-inline: auto;
+
+        .swiper {
+
+            margin-inline: auto;
+        }
+
+        .swiper-wrapper {
+
+        }
+
+        .swiper-slide {
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            &::before, &::after {
+                display: none;
+            }
+
+            svg {
+                width: 15px;
+                height: 26px;
+            }
+        }
+
+        .swiper-button-prev {
+            transform: rotate(180deg);
+        }
+
+        .swiper-button-next {
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: 31px;
+        }
+    }
+
+    &__text {
+        line-height: 146%;
+        @media (max-width: $mobile) {
+            font-size: 14px;
+        }
+    }
+
+    &__author {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .app-btn {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+

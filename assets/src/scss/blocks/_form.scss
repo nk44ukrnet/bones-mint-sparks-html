@@ -1,0 +1,124 @@
+.app-form {
+
+    background-color: #313030;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &.visible {
+        background-image: url(../../img/input-form-bg-lg.jpg);
+
+        @media (max-width: $mobile) {
+            background-image: url(../../img/input-form-bg-sm.jpg);
+            background-size: unset;
+            background-position: top center;
+        }
+    }
+
+
+    .app-container {
+        padding-block: 112px 54px;
+
+        @media (max-width: $mobile) {
+            padding-block: 73px 38px;
+
+        }
+    }
+
+    &__heading {
+        font-size: 46px;
+        margin: 0;
+        margin-bottom: 26px;
+
+        @media (max-width: $mobile) {
+            font-size: 36px;
+            margin-bottom: 32px;
+        }
+    }
+
+    form {
+        .holder {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 29px;
+            margin-bottom: 29px;
+
+            @media (max-width: $mobile) {
+                margin-bottom: 18px;
+                gap: 17px;
+            }
+        }
+
+        .cell {
+            flex: 1 1 427px;
+        }
+
+        .item {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 29px;
+            }
+
+            @media (max-width: $mobile) {
+                &:not(:last-child) {
+                    margin-bottom: 17px;
+                }
+            }
+        }
+
+        label {
+            line-height: 190%;
+            font-size: 17px;
+            display: block;
+
+            @media (max-width: $mobile) {
+                text-align: center;
+                margin-bottom: 17px;
+                line-height: 100%;
+            }
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            min-height: 50px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        textarea {
+            border-radius: 10px;
+            padding: 10px;
+            display: block;
+            resize: none;
+            width: 100%;
+            min-height: 192px;
+            margin-bottom: 57px;
+            box-sizing: border-box;
+            border: none;
+
+            @media (max-width: $mobile) {
+                margin-bottom: 32px;
+            }
+        }
+
+        .app-btn {
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            border: unset;
+        }
+
+        .wpcf7-response-output {
+            &:not(:empty) {
+                margin-top: 30px;
+                border: 1px solid $color-light;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}

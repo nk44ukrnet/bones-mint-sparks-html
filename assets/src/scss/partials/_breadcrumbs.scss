@@ -1,0 +1,23 @@
+.app-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        gap: 5px;
+        font-weight: 400;
+        font-size: 12px;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+
+            &::after {
+                content: '»';
+                margin-left: 5px;
+                color: $color-green;
+            }
+        }
+    }
+}

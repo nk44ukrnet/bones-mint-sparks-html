@@ -1,0 +1,198 @@
+.app-philosophy {
+
+    .app-container {
+        padding-top: 66px;
+        padding-bottom: 79px;
+
+        max-width: 1080px;
+
+        @media (max-width: $mobile) {
+            padding-top: 45px;
+            padding-bottom: 27px;
+        }
+    }
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 1115px) {
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &_img {
+            flex: 0 1 542px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 370px;
+
+            &.active {
+                .app-philosophy,
+                .app-philosophy__video {
+                    display: none;
+                }
+
+                .app-philosophy__iframe {
+                    display: block;
+                }
+            }
+        }
+
+        &_text {
+            flex: 0 1 405px;
+            position: relative;
+
+            @media (min-width: $mobile) {
+                &::before {
+                    content: '';
+                    width: 40px;
+                    height: 31px;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    background-image: url(../../img/quote-gray.png);
+                    transform: translateX(-100%) scale(-1);
+                    opacity: .5;
+                }
+
+                &::after {
+                    content: '';
+                    width: 40px;
+                    height: 31px;
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    background-image: url(../../img/quote-gray.png);
+                    transform: translateX(100%);
+                    opacity: .5;
+                }
+            }
+        }
+
+        @media (max-width: $mobile) {
+            &_img {
+                order: 2;
+                min-height: 308px;
+            }
+        }
+    }
+
+    &__thumbnail {
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        z-index: 1;
+        object-fit: cover;
+
+        @media (max-width: $mobile) {
+            height: 100%;
+            min-height: 308px;
+        }
+    }
+
+    &__video {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        strong {
+            margin-top: 20px;
+            line-height: 133%;
+            font-family: $font2;
+            font-weight: 900;
+            font-size: 24px;
+            padding-inline: 10px;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: $mobile) {
+            //justify-content: flex-end;
+            min-width: 542px;
+            min-height: 372px;
+
+            strong {
+                margin-top: auto;
+                margin-bottom: 40px;
+            }
+        }
+        @media (min-width: $mobile) {
+            strong {
+                margin-top: 64px;
+            }
+        }
+        @media (max-width: $mobile) {
+            strong {
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__play {
+        z-index: 3;
+        cursor: pointer;
+
+
+        @media (min-width: $mobile) {
+            margin-top: auto;
+        }
+
+        //@media (min-width: $mobile) {
+        //  display: none;
+        //}
+    }
+
+    &__iframe {
+        display: none;
+        width: 100%;
+        height: auto;
+        min-height: 373px;
+        z-index: 3;
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 28px;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    &__desc {
+        margin-bottom: 32px;
+        line-height: 160%;
+        font-size: 20px;
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 16px;
+        background-image: linear-gradient(-80deg, #52a31c 0%, #79c743 100%);
+    }
+}

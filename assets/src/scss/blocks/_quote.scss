@@ -1,0 +1,117 @@
+.app-quote {
+
+    background-color: $color-dark1;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.visible {
+        background-image: url(../../img/quote-bg-lg.jpg);
+    }
+
+    @media (max-width: $mobile) {
+        &.visible {
+            background-image: url(../../img/quote-bg-sm.png);
+        }
+    }
+
+    .app-container {
+        padding-top: 128px;
+        padding-bottom: 128px;
+
+        @media (max-width: $mobile) {
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        max-width: 436px;
+        margin-left: auto;
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 31px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../img/quote-white.png);
+            opacity: .2;
+            transform: scale(-1) translateY(100%) translateX(50%);
+        }
+
+        &::after {
+            content: '';
+            width: 40px;
+            height: 31px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../img/quote-white.png);
+            opacity: .2;
+            transform: translateX(50%) translateY(-50%);
+        }
+
+        @media (min-width: $mobile) {
+            margin-right: 20px;
+        }
+        @media (max-width: $mobile) {
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+
+            &:before {
+                width: 30px;
+                height: 23px;
+                transform: scale(-1) translateY(100%) translateX(10%);
+            }
+            &:after {
+                width: 30px;
+                height: 23px;
+                transform: translateX(-20%) translateY(-250%);
+            }
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        margin-bottom: 40px;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (min-width: $mobile) {
+            strong {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width: $mobile) {
+            margin-bottom: 30px;
+            line-height: 150%;
+            font-size: 18px;
+        }
+    }
+
+    &__btn {
+        .app-btn {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}
+
+.app-btn {
+
+    &_green {
+    }
+}

@@ -1,0 +1,140 @@
+.app-plan {
+    background-color: #30302f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: $mobile) {
+        &.visible {
+            background-image: url(../../img/plan-bg-lg.jpg);
+        }
+    }
+
+    .app-container {
+        padding-top: 64px;
+        padding-bottom: 74px;
+
+        @media (max-width: $mobile) {
+            padding-top: 38px;
+            padding-bottom: 34px;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 37px;
+        font-size: 46px;
+
+        @media (max-width: $mobile) {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 46px;
+
+        @media (max-width: $mobile) {
+            justify-content: center;
+            gap: 26px;
+        }
+    }
+
+    &__item {
+        flex: 1 1 351px;
+        border-radius: 10px;
+        background-color: $color-light;
+        box-sizing: border-box;
+        outline: 9px solid $color-light;
+
+        border: 1px solid #cccccc;
+        text-align: center;
+        padding: 32px 44px 25px;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $mobile) {
+            padding: 32px 40px 25px;
+        }
+    }
+
+    &__top {
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 23px;
+    }
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 122px;
+        height: 122px;
+        background: linear-gradient(to top, #252525, #4c4c4c);
+        margin-inline: auto;
+    }
+
+    &__cell {
+
+    }
+
+    &__type {
+        font-size: 11px;
+        //line-height: 290%;
+    }
+
+    &__value {
+        font-weight: 800;
+        font-size: 33px;
+        line-height: 127%;
+        font-family: $font3;
+        color: $color-light;
+
+        small {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $font1;
+        }
+    }
+
+    &__subheading {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 137%;
+        margin-top: 25px;
+        margin-bottom: 21px;
+    }
+
+    &__ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    &__li {
+        font-size: 12px;
+        line-height: 133%;
+        color: #414141;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__foot {
+        margin-top: auto;
+    }
+
+    &__btn {
+        width: 100%;
+    }
+}
