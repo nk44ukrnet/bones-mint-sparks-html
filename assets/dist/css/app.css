@@ -1894,9 +1894,9 @@ body {
     position: absolute;
     display: block;
     top: 50%;
-    right: -50%;
-    -webkit-transform: translate(-50%, -50%) rotate(90deg);
-            transform: translate(-50%, -50%) rotate(90deg);
+    right: -15px;
+    -webkit-transform: translate(-30%, -50%) rotate(90deg);
+            transform: translate(-30%, -50%) rotate(90deg);
     background-image: url(../../img/arrow-white.svg);
     background-repeat: no-repeat;
     background-size: contain;
